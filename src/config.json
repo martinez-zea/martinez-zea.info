@@ -1,0 +1,9 @@
+{
+  "output": "./../",
+  "locals": {
+    "title": "martinez-zea",
+    "description" : "mz website"
+  },
+
+  "plugins":["wintersmith-less"]
+}

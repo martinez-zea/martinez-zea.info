@@ -1,0 +1,36 @@
+extends layout
+
+block head_extra
+  link(rel='stylesheet', href='/static/css/jquery.lightbox-0.5.css')
+
+block script_extra
+  script(src='/static/lib/jquery.lightbox-0.5.min.js')
+  script
+    $(document).ready(function(){
+      $('#project-images a').lightBox({
+        imageLoading: '/static/img/loading.gif',
+        imageBtnClose: '/static/img/close.gif',
+        imageBtnPrev: '/static/img/prev.gif',
+        imageBtnNext: '/static/img/next.gif',
+        imageBlank: '/static/img/blank.gif'
+      });
+    });
+
+block content
+  h1 
+    != page.title
+  
+  div#project-images.span2
+    - var imgs = _.chain(contents.projects[page.title].images._.files).map(function(item){
+    -    return item
+    -  }).value()
+    each im in imgs
+      a(href='/'+im.filename)
+        img(src='/'+im.filename, width=170) 
+
+
+  div#project-content.span9
+    != page.html
+
+block footer
+  a(href='/') << regresar | back

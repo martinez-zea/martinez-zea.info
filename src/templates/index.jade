@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  div#project-list.span2
+    h5 proyectos | projects
+    ul
+      -var prjs = _.chain(contents.projects._.directories).map(function(item){
+      -    return item.index
+      -  }).compact().sortBy(function(item){
+      -    return -item.date
+      -    }).value()
+      each prj in prjs
+        li 
+          a(href=prj.url)= prj.title
+
+    h5 misc
+    ul
+      li m1
+      li m2
+
+  div#bio.span4
+    h5 info
+    != page.html
+
+  div#links.span4
+    div.inner
+      h5 contacto | contact
+      ul
+        li 
+          a(mailto='cmart@decolector.net') cmart@decolector.net
+        li 
+          a(mailto='zea@randomlab.net') zea@randomlab.net
+
+    div.inner
+      h5 cv
+      ul
+        li
+          a(href='https://github.com/martinez-zea/cv/raw/master/build/spanish/martinez-zea.pdf') espa&ntilde;ol
+        li
+          a(href='https://github.com/martinez-zea/cv/raw/master/build/english/martinez-zea-eng.pdf') english
+
+    div.inner
+      h5 links
+      ul
+        li
+          a(href='http://martinez-zea.info/wiki/') wiki
+        li
+          a(href='https://github.com/organizations/martinez-zea') github
+        li 
+          a(href='https://secure.flickr.com/photos/nerd_bots') flickr
+        li
+          a(href='http://vimeo.com/user1747692') vimeo
