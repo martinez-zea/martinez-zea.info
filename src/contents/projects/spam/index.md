@@ -1,5 +1,11 @@
-title: spam
 template: project.jade
+title: spam
+subtitle: sistema publico de marcacion
+year: 2010
+video: 18564222
+code: http://code.randomlab.net/hg/hgwebdir.cgi/spam/
+images: http://www.flickr.com/photos/nerd_bots/sets/72157625284915560/
+wiki: http://martinez-zea.info/wiki/index.php/Spam/Spam
 
 
 
@@ -18,3 +24,9 @@ usando tecnologías al alcance.
 
 SPAM nace dentro de Interactivos? BH y funcionara por primera vez en Belo 
 Horizonte en Diciembre 2010
+
+---
+
+SPAM is a public system for dissemination of audio messages based on strategies of unsolicited advertising (spam) using the fixed telephone network. The platform allows anyone with access to a telephone line to record a message that will be transmitted through another phone line using an automatic dialing system.
+
+The infrastructure of fixed telephony is in the process of obsolescence due to penetration of mobile telephony, instant messaging (sms) and email. This project aims to recover this infrastructure and turn it into a distribution system for asynchronous, anonymous and massive communication.
