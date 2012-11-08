@@ -1,13 +1,13 @@
 extends layout
 
-block content
+block content  
   div#project-list.span2
     h5 proyectos | projects
     ul
       -var prjs = _.chain(contents.projects._.directories).map(function(item){
       -    return item.index
       -  }).compact().sortBy(function(item){
-      -    return -item.date
+      -    return -item.metadata.year
       -    }).value()
       each prj in prjs
         li 
@@ -18,11 +18,11 @@ block content
       li m1
       li m2
 
-  div#bio.span4
+  div#bio.span4.offset1
     h5 info
     != page.html
 
-  div#links.span4
+  div#links.span2.offset1
     div.inner
       h5 contacto | contact
       ul
