@@ -5,7 +5,7 @@ Usage
 =====
 
 * `mkdir contents/projects/new-project`
-* if the project have images, place them inside an `images` folder on the project folder
+* if the project has images, place them inside an `images` folder on the project folder
 * create an `index.md` file with the content
 * thats it!
 
@@ -22,10 +22,15 @@ it is possible to use metadata tags to include some aditional information on the
 * `images:` *link to flickr set*
 * `wiki:` *link to wiki page*
 
+to include external images as metadata:
+
+*  `img_X` *where X is an unique id for the image key*
 
 
-Uses
-====
+
+Built with
+==========
+
 * [wintersmith](https://github.com/jnordberg/wintersmith)
 * [less](http://lesscss.org) via [wintersmith-less](https://github.com/jnordberg/wintersmith-less)
 * [underscore](http://documentcloud.github.com/underscore/)

@@ -29,8 +29,18 @@ block content
         != page.metadata.year
   
   div#project-media.span3
-    if contents.projects[page.title].images
-      div#project-images
+    div#project-images
+      - var img_set = _.chain(page.metadata).map(function(value, key){
+      -   if (key.substring(0,4) == 'img_'){
+      -     return value
+      -    }
+      -  }).compact().value()
+      - console.log(img_set)
+      each im in img_set
+          a(href=im)
+            img(src=im)
+
+      if contents.projects[page.title].images      
         - var imgs = _.chain(contents.projects[page.title].images._.files).map(function(item){
         -    return item
         -  }).value()

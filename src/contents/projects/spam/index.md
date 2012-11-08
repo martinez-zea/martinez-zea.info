@@ -6,6 +6,8 @@ video: 18564222
 code: http://code.randomlab.net/hg/hgwebdir.cgi/spam/
 images: http://www.flickr.com/photos/nerd_bots/sets/72157625284915560/
 wiki: http://martinez-zea.info/wiki/index.php/Spam/Spam
+img_1: http://farm5.staticflickr.com/4133/5172423500_cf283fb819_z.jpg
+img_2: http://farm5.staticflickr.com/4133/5172423500_cf283fb819_z.jpg
 
 
 
