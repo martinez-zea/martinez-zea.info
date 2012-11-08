@@ -26,6 +26,9 @@ to include external images as metadata:
 
 *  `img_X` *where X is an unique id for the image key*
 
+need more links? just add them as metadata:
+
+* `misc_X: [title](url)` *it is mandatory to use both 'title' and 'url' as parameters for the link*
 
 
 Built with
