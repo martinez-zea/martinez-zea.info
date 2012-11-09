@@ -35,7 +35,6 @@ block content
       -     return value
       -    }
       -  }).compact().value()
-      - console.log(img_set)
       each im in img_set
           a(href=im)
             img(src=im)
@@ -70,6 +69,20 @@ block content
       a(href=page.metadata.images) imagenes | images 
       br
 
+    - var misc_set = _.chain(page.metadata).map(function(value, key){
+    -   if (key.substring(0,5) == 'misc_'){
+    -     return value
+    -    }
+    -  }).compact().value()
+    - var misc_parsed = []
+    - _.each(misc_set, function(item){
+    -     var tmp = item.match(/\[([^)]+)\]\(([^)]+)\)/ )
+    -     var json = {title:tmp[1],url:tmp[2]}
+    -     misc_parsed.push(json) 
+    -  })
+    each custom_link in misc_parsed
+      a(href=custom_link.url) #{custom_link.title}
+      br 
 
 block footer
   a(href='/') << regresar | back
