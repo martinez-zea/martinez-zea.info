@@ -39,13 +39,20 @@ block content
           a(href=im)
             img(src=im)
 
-      if contents.projects[page.title].images      
-        - var imgs = _.chain(contents.projects[page.title].images._.files).map(function(item){
-        -    return item
-        -  }).value()
-        each im in imgs
-          a(href='/'+im.filename)
-            img(src='/'+im.filename)
+      //- this implementation of read images from folder is REALLY BUGGY
+      //- if need it for any reason should be fixed
+      //- - if (typeof contents.projects[page.title] !== undefined){
+      //- -   if(contents.projects[page.title].images){
+      //- -     var imgs = _.chain(contents.projects[page.title].images._.files).map(function(item){
+      //- -       return item
+      //- -     }).value()
+      //- -   }
+      //- - }
+      //- if imgs
+      //-   each im in imgs
+      //-     a(href='/'+im.filename)
+      //-       img(src='/'+im.filename)
+
 
     div#project-video
       iframe(src="http://player.vimeo.com/video/"+page.metadata.video+"?badge=0&amp;color=ffffff",
