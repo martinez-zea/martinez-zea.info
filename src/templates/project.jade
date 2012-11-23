@@ -76,12 +76,12 @@ block content
         //-     a(href='/'+im.filename)
         //-       img(src='/'+im.filename)
 
-
-      div#project-video
-        iframe(src="http://player.vimeo.com/video/"+page.metadata.video+"?badge=0&amp;color=ffffff",
-                width="270", height="203", frameborder="0", 
-                webkitAllowFullScreen mozallowfullscreen allowFullScreen )
-        
+      if page.metadata.video
+        div#project-video
+          iframe(src="http://player.vimeo.com/video/"+page.metadata.video+"?badge=0&amp;color=ffffff",
+                  width="270", height="203", frameborder="0", 
+                  webkitAllowFullScreen mozallowfullscreen allowFullScreen )
+          
 
 
     div#project-content.span6.offset1
@@ -89,7 +89,7 @@ block content
 
       div#project-links.span6
         if page.metadata.code
-          a(href=page.metadata.code) codigo | code 
+          a(href=page.metadata.code) c&oacute;digo | code 
           br
         if page.metadata.wiki
           a(href=page.metadata.wiki) wiki 
