@@ -18,10 +18,29 @@ block script_extra
 
 block content
   div.row
-    div#back.span2
-      a(href='/') << regresar | back
+    div#back.span6
+      - var prjs = _.chain(contents.projects._.directories).map(function(item){
+      -    return item.index
+      -  }).compact().sortBy(function(item){
+      -    return -item.metadata.year
+      -    }).value()
+      - for(var item = 0; item< prjs.length; item++){
+      -   if (prjs[item].title === page.title ){
+      -     current = {'id':item, 'total': prjs.length}
+      -     break
+      -   }
+      -  }
+      if current.id > 0
+        title = prjs[current.id-1].title
+        url = prjs[current.id-1].url
+        a(href='#{url}') << anterior | previous : #{title}
+        br
+      if current.id < prjs.length-1
+        title = prjs[current.id+1].title
+        url = prjs[current.id+1].url
+        a(href='#{url}') siguiente | next : #{title} >>
     
-    div#project-title.span4.offset6
+    div#project-title.span4.offset1
       h2
         != page.title
       if page.metadata.subtitle
