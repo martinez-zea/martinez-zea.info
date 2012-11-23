@@ -17,79 +17,83 @@ block script_extra
     });
 
 block content
-  div#project-title.span4.offset6
-    h3
-      != page.title
-    if page.metadata.subtitle
-      span
-        != page.metadata.subtitle
-      br
-    if page.metadata.year
-      span
-        != page.metadata.year
-  
-  div#project-media.span3
-    div#project-images
-      - var img_set = _.chain(page.metadata).map(function(value, key){
-      -   if (key.substring(0,4) == 'img_'){
-      -     return value
-      -    }
-      -  }).compact().value()
-      each im in img_set
-          a(href=im)
-            img(src=im)
+  div.row
+    div#back.span2
+      a(href='/') << regresar | back
+    
+    div#project-title.span4.offset6
+      h2
+        != page.title
+      if page.metadata.subtitle
+        span
+          != page.metadata.subtitle
+        br
+      if page.metadata.year
+        span
+          != page.metadata.year
+  div.row
+    div#project-media.span3
+      div#project-images
+        - var img_set = _.chain(page.metadata).map(function(value, key){
+        -   if (key.substring(0,4) == 'img_'){
+        -     return value
+        -    }
+        -  }).compact().value()
+        each im in img_set
+            a(href=im)
+              img(src=im)
 
-      //- this implementation of read images from folder is REALLY BUGGY
-      //- if need it for any reason should be fixed
-      //- - if (typeof contents.projects[page.title] !== undefined){
-      //- -   if(contents.projects[page.title].images){
-      //- -     var imgs = _.chain(contents.projects[page.title].images._.files).map(function(item){
-      //- -       return item
-      //- -     }).value()
-      //- -   }
-      //- - }
-      //- if imgs
-      //-   each im in imgs
-      //-     a(href='/'+im.filename)
-      //-       img(src='/'+im.filename)
-
-
-    div#project-video
-      iframe(src="http://player.vimeo.com/video/"+page.metadata.video+"?badge=0&amp;color=ffffff",
-              width="270", height="203", frameborder="0", 
-              webkitAllowFullScreen mozallowfullscreen allowFullScreen )
-      
+        //- this implementation of read images from folder is REALLY BUGGY
+        //- if need it for any reason should be fixed
+        //- - if (typeof contents.projects[page.title] !== undefined){
+        //- -   if(contents.projects[page.title].images){
+        //- -     var imgs = _.chain(contents.projects[page.title].images._.files).map(function(item){
+        //- -       return item
+        //- -     }).value()
+        //- -   }
+        //- - }
+        //- if imgs
+        //-   each im in imgs
+        //-     a(href='/'+im.filename)
+        //-       img(src='/'+im.filename)
 
 
-  div#project-content.span6.offset1
-    != page.html
+      div#project-video
+        iframe(src="http://player.vimeo.com/video/"+page.metadata.video+"?badge=0&amp;color=ffffff",
+                width="270", height="203", frameborder="0", 
+                webkitAllowFullScreen mozallowfullscreen allowFullScreen )
+        
 
-  div#project-links.span4.offset6
-    if page.metadata.code
-      a(href=page.metadata.code) codigo | code 
-      br
-    if page.metadata.wiki
-      a(href=page.metadata.wiki) wiki 
-      br
 
-    if page.metadata.images
-      a(href=page.metadata.images) imagenes | images 
-      br
+    div#project-content.span6.offset1
+      != page.html
 
-    - var misc_set = _.chain(page.metadata).map(function(value, key){
-    -   if (key.substring(0,5) == 'misc_'){
-    -     return value
-    -    }
-    -  }).compact().value()
-    - var misc_parsed = []
-    - _.each(misc_set, function(item){
-    -     var tmp = item.match(/\[([^)]+)\]\(([^)]+)\)/ )
-    -     var json = {title:tmp[1],url:tmp[2]}
-    -     misc_parsed.push(json) 
-    -  })
-    each custom_link in misc_parsed
-      a(href=custom_link.url) #{custom_link.title}
-      br 
+      div#project-links.span6
+        if page.metadata.code
+          a(href=page.metadata.code) codigo | code 
+          br
+        if page.metadata.wiki
+          a(href=page.metadata.wiki) wiki 
+          br
+
+        if page.metadata.images
+          a(href=page.metadata.images) im&aacute;genes | images 
+          br
+
+        - var misc_set = _.chain(page.metadata).map(function(value, key){
+        -   if (key.substring(0,5) == 'misc_'){
+        -     return value
+        -    }
+        -  }).compact().value()
+        - var misc_parsed = []
+        - _.each(misc_set, function(item){
+        -     var tmp = item.match(/\[([^)]+)\]\(([^)]+)\)/ )
+        -     var json = {title:tmp[1],url:tmp[2]}
+        -     misc_parsed.push(json) 
+        -  })
+        each custom_link in misc_parsed
+          a(href=custom_link.url) #{custom_link.title}
+          br 
 
 block footer
   a(href='/') << regresar | back

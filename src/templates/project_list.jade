@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  div#project-list.span3
+    h3 proyectos | projects
+    ul
+      -var prjs = _.chain(contents.projects._.directories).map(function(item){
+      -    return item.index
+      -  }).compact().sortBy(function(item){
+      -    return -item.metadata.year
+      -    }).value()
+      each prj in prjs
+        li 
+          a(href=prj.url)= prj.title

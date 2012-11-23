@@ -2,8 +2,33 @@
 @import "header.less";
 @import "project.less";
 
+body{
+  font-size: 12px;
+}
+
+//Fonts 
+h1 {
+  font-size: 218%;
+}
+
+h2 {
+  font-size: 164%;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 145%;
+  margin-bottom: 0px;
+}
+
+h4 {
+  font-size: 118%;
+}
+
 a{
   color: @link;
+  letter-spacing: 1px;
+  font-weight: bold;
   &:hover{
     color: darken(@link, 20%);
     text-decoration: none;
@@ -16,4 +41,12 @@ ul{
 
 #content{
   margin-bottom: 20px;
+}
+
+.bio-inner{
+  margin-left: 15px;
+}
+
+footer{
+  margin-bottom: 60px;
 }
