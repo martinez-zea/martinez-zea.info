@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>martinez-zea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="mz website">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/styles/master.css">
+    <link rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css">
+  </head>
+  <body>
+    <div id="header" class="navbar">
+      <div class="navbar-inner">
+        <div class="container"><a href="/" class="brand"> 
+            <h1>martinez-zea</h1></a></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="content" class="span12">
+          <div class="row">
+            <div id="back" class="span6"><a href="/projects/generador/">siguiente | next : Generador de Valores >></a>
+            </div>
+            <div id="project-title" class="span4 offset1">
+              <h2>Tweet2speech
+              </h2><span>Aplicación para teléfonos móviles | Mobile phones application</span><br><span>2012</span>
+            </div>
+          </div>
+          <div class="row">
+            <div id="project-media" class="span3">
+              <div id="project-images"><a href="http://farm9.staticflickr.com/8344/8210687439_763435b1ee_z.jpg"><img src="http://farm9.staticflickr.com/8344/8210687439_763435b1ee_z.jpg"></a>
+              </div>
+            </div>
+            <div id="project-content" class="span6 offset1"><p><strong>Tweet2speech</strong> es una sencilla herramienta de participación remota en manifestaciones y eventos en el espacio público, que  le otorga voz a quienes no estén presentes físicamente en un lugar.  La aplicación usa el motor de texto a voz del sistema operativo Android para leer <em>tweets</em> que contienen un <em>hashtag</em> determinado, definido previamente por el usuario en la aplicación.
+
+</p>
+<hr>
+<p><strong>Tweet2speech</strong> is a simple tool for remote participation in manifestations and public events, which gives voice to whom are not physically present in a place.  The application uses the Android’s text to speech engine to read <em>tweets</em> containing a specific <em>hashtag</em>, previously defined by the user in the application.
+</p>
+
+              <div id="project-links" class="span6"><a href="http://code.randomlab.net/hg/hgwebdir.cgi/t2s/summary">c&oacute;digo | code </a><br><a href="http://martinez-zea.info/wiki/index.php/Tweet2Speech/Tech">wiki </a><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="span6 offset1"><a href="/"><< regresar | back</a></div>
+    </footer>
+    <script src="/static/lib/jquery-1.8.2.min.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/lib/jquery.lightbox-0.5.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#project-images a').lightBox({
+          imageLoading: '/static/img/loading.gif',
+          imageBtnClose: '/static/img/close.gif',
+          imageBtnPrev: '/static/img/prev.gif',
+          imageBtnNext: '/static/img/next.gif',
+          imageBlank: '/static/img/blank.gif'
+        });
+      });
+      
+    </script><!-- Piwik -->
+     <script type="text/javascript">
+       var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.randomlab.net/" : "http://stats.randomlab.net/");
+       document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js'type='text/javascript'%3E%3C/script%3E"));
+       </script>
+       <script type="text/javascript">
+         try {
+           var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 7);
+           piwikTracker.trackPageView();
+           piwikTracker.enableLinkTracking();
+         } catch( err ) {}
+       </script>
+       <noscript><p>
+       <img src="http://stats.randomlab.net/piwik.php?idsite=7" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Tag -->
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>martinez-zea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="mz website">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/styles/master.css">
+    <link rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css">
+  </head>
+  <body>
+    <div id="header" class="navbar">
+      <div class="navbar-inner">
+        <div class="container"><a href="/" class="brand"> 
+            <h1>martinez-zea</h1></a></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="content" class="span12">
+          <div class="row">
+            <div id="back" class="span6"><a href="/projects/spam/"><< anterior | previous : spam</a><br><a href="/projects/pyhpgl/">siguiente | next : pyhpgl >></a>
+            </div>
+            <div id="project-title" class="span4 offset1">
+              <h2>Data Plotter
+              </h2><span>2010</span>
+            </div>
+          </div>
+          <div class="row">
+            <div id="project-media" class="span3">
+              <div id="project-images">
+              </div>
+            </div>
+            <div id="project-content" class="span6 offset1"><p>Data Plotter es un dispositivo que crea dibujos usando como input los datos capturados por el BereBere. Su principio es similar al de un sismógrafo. Su comportamiento esta determinado por la variación de los datos capturados durante las derivas. Esta maquina fue construida para realizar una acción que deja una huella sobre un papel.
+
+</p>
+<p>Data Plotter is a device which create drawings from the data captured by the berebere. Its principle is similar to the seismograph. Its behavior is determined by the variation of the data captured during the wandering. This machine was built to perform an action which leaves traces on paper.
+</p>
+
+              <div id="project-links" class="span6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="span6 offset1"><a href="/"><< regresar | back</a></div>
+    </footer>
+    <script src="/static/lib/jquery-1.8.2.min.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/lib/jquery.lightbox-0.5.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#project-images a').lightBox({
+          imageLoading: '/static/img/loading.gif',
+          imageBtnClose: '/static/img/close.gif',
+          imageBtnPrev: '/static/img/prev.gif',
+          imageBtnNext: '/static/img/next.gif',
+          imageBlank: '/static/img/blank.gif'
+        });
+      });
+      
+    </script><!-- Piwik -->
+     <script type="text/javascript">
+       var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.randomlab.net/" : "http://stats.randomlab.net/");
+       document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js'type='text/javascript'%3E%3C/script%3E"));
+       </script>
+       <script type="text/javascript">
+         try {
+           var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 7);
+           piwikTracker.trackPageView();
+           piwikTracker.enableLinkTracking();
+         } catch( err ) {}
+       </script>
+       <noscript><p>
+       <img src="http://stats.randomlab.net/piwik.php?idsite=7" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Tag -->
+  </body>
+</html>

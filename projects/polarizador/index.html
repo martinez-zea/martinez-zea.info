@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>martinez-zea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="mz website">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/styles/master.css">
+    <link rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css">
+  </head>
+  <body>
+    <div id="header" class="navbar">
+      <div class="navbar-inner">
+        <div class="container"><a href="/" class="brand"> 
+            <h1>martinez-zea</h1></a></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="content" class="span12">
+          <div class="row">
+            <div id="back" class="span6"><a href="/projects/multitk/"><< anterior | previous : Multi TK</a><br><a href="/projects/pyfreak/">siguiente | next : PyFreak >></a>
+            </div>
+            <div id="project-title" class="span4 offset1">
+              <h2>Polarizador
+              </h2><span>2008</span>
+            </div>
+          </div>
+          <div class="row">
+            <div id="project-media" class="span3">
+              <div id="project-images">
+              </div>
+            </div>
+            <div id="project-content" class="span6 offset1"><p>Polarizador is a machine that asks questions, stores the answers and returns printed reminders of the interaction.  It captures and compares information to create opposite opinions about any subject.
+
+</p>
+<p>Each visitor is identified by the system using a bidimensional barcode. When the machine reads a barcode it picks one from a limited set of predefined questions and reads it by means of a text to speech application. The user answers the question by pressing one of two buttons ( yes / no ) and his answers are stored in a database for further comparison and statistics.  Polarizador prints a receipt that contains a comparison of the current answer with others stored in the database and updates a simple pie chart projected in the wall.
+
+</p>
+<p>Polarizador es una máquina que hace preguntas, almacena las respuestas y devuelve un recordatorio impreso de la interacción.  Captura información y la compara para crear opiniones opuestas acerca de cualquier tema.
+
+</p>
+<p>Cada visitante es identificado por el sistema por un código de barras.  Cuando la máquina lee el código, selecciona una de un grupo de preguntas predefinidas y la lee por medio de un motor de texto a voz. El usuario responde presionando uno de dos botones ( si / no ), su respuesta es almacenada en una base de datos para realizar comparaciones y estadísticas posteriormente.  El Polarizador imprime un recibo con la comparación de la respuesta actual con una almacenada en la base de datos y luego actualiza un simple infografía proyectada.
+</p>
+
+              <div id="project-links" class="span6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="span6 offset1"><a href="/"><< regresar | back</a></div>
+    </footer>
+    <script src="/static/lib/jquery-1.8.2.min.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/lib/jquery.lightbox-0.5.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#project-images a').lightBox({
+          imageLoading: '/static/img/loading.gif',
+          imageBtnClose: '/static/img/close.gif',
+          imageBtnPrev: '/static/img/prev.gif',
+          imageBtnNext: '/static/img/next.gif',
+          imageBlank: '/static/img/blank.gif'
+        });
+      });
+      
+    </script><!-- Piwik -->
+     <script type="text/javascript">
+       var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.randomlab.net/" : "http://stats.randomlab.net/");
+       document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js'type='text/javascript'%3E%3C/script%3E"));
+       </script>
+       <script type="text/javascript">
+         try {
+           var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 7);
+           piwikTracker.trackPageView();
+           piwikTracker.enableLinkTracking();
+         } catch( err ) {}
+       </script>
+       <noscript><p>
+       <img src="http://stats.randomlab.net/piwik.php?idsite=7" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Tag -->
+  </body>
+</html>

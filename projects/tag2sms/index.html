@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>martinez-zea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="mz website">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/styles/master.css">
+    <link rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css">
+  </head>
+  <body>
+    <div id="header" class="navbar">
+      <div class="navbar-inner">
+        <div class="container"><a href="/" class="brand"> 
+            <h1>martinez-zea</h1></a></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="content" class="span12">
+          <div class="row">
+            <div id="back" class="span6"><a href="/projects/cornucopia/"><< anterior | previous : cornucopia</a><br><a href="/projects/clap/">siguiente | next : clap >></a>
+            </div>
+            <div id="project-title" class="span4 offset1">
+              <h2>tag2sms
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div id="project-media" class="span3">
+              <div id="project-images">
+              </div>
+            </div>
+            <div id="project-content" class="span6 offset1"><p>Tag2sms es una caja de mensajes sms que permite a los usuarios acceder a mensajes enviando palabras clave a un teléfono corriendo la aplicación.
+
+</p>
+<p>El software fue desarrollado para ser usado en talleres donde personas o grupos pueden crear procesos de comunicacion asíncrona, iniciados en lugares especificos del espacio urbano.  El sistema corre en un teléfono Android, pero los usuarios pueden interactuar con el usando cualquier móvil.
+
+</p>
+<p>Tag2sms is a sms inbox that allows users to access messages by sending keywords to a smartphone running the application.
+
+</p>
+<p>The software was developed to be used in workshops where communities can create processes of asynchronous communication triggered in specific locations of the urban space.  The system runs in an android phone, but users can interact with it using any mobile.
+
+</p>
+<p>The workshops are focused on the creation of urban interventions along with the associated keywords and messages.  even though, the tool is not limited to public space , but it can be adapted to other situations where asynchronous communication over sms is needed. like any other sms gateway.
+</p>
+
+              <div id="project-links" class="span6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="span6 offset1"><a href="/"><< regresar | back</a></div>
+    </footer>
+    <script src="/static/lib/jquery-1.8.2.min.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/lib/jquery.lightbox-0.5.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#project-images a').lightBox({
+          imageLoading: '/static/img/loading.gif',
+          imageBtnClose: '/static/img/close.gif',
+          imageBtnPrev: '/static/img/prev.gif',
+          imageBtnNext: '/static/img/next.gif',
+          imageBlank: '/static/img/blank.gif'
+        });
+      });
+      
+    </script><!-- Piwik -->
+     <script type="text/javascript">
+       var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.randomlab.net/" : "http://stats.randomlab.net/");
+       document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js'type='text/javascript'%3E%3C/script%3E"));
+       </script>
+       <script type="text/javascript">
+         try {
+           var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 7);
+           piwikTracker.trackPageView();
+           piwikTracker.enableLinkTracking();
+         } catch( err ) {}
+       </script>
+       <noscript><p>
+       <img src="http://stats.randomlab.net/piwik.php?idsite=7" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Tag -->
+  </body>
+</html>

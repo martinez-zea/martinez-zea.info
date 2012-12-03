@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>martinez-zea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="mz website">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/styles/master.css">
+    <link rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css">
+  </head>
+  <body>
+    <div id="header" class="navbar">
+      <div class="navbar-inner">
+        <div class="container"><a href="/" class="brand"> 
+            <h1>martinez-zea</h1></a></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="content" class="span12">
+          <div class="row">
+            <div id="back" class="span6"><a href="/projects/polarizador/"><< anterior | previous : Polarizador</a><br>
+            </div>
+            <div id="project-title" class="span4 offset1">
+              <h2>PyFreak
+              </h2><span>2007</span>
+            </div>
+          </div>
+          <div class="row">
+            <div id="project-media" class="span3">
+              <div id="project-images">
+              </div>
+            </div>
+            <div id="project-content" class="span6 offset1"><p>PyFreak es un script de python (pygame) que recorre directorios con secuencias de imagenes, las selecciona aleatoriamente dentro de rangos controlados por el usuario y las muestra rapidamente. Puede ser controlado con el teclado o con un Joystick. Este software ha sido desarrollado para presentaciones en vivo y VJ sets. Pyfreak encuentra actualmente en un estado de desarrollo alfa, verdaderamente inestable !
+El código de la aplicacion esta disponible aquí
+
+</p>
+<p>PyFreak es un script de python (pygame) que lee directorios conteniendo secuencias de imágenes y las desordena con niveles de aleatoriedad controlados. El script puede ser usado en vivo, controlandolo con un joystick o un teclado.
+
+</p>
+<p>PyFreak es un script de python (pygame) que lee secuencias de imágenes de forma no secuencial y semi - aleatoria.  El programa toma imágenes numeradas consecutivamente en un directorio, las reordena y las muestra de manera no lineal, usando funciones aleatorias controladas con un joystick o un teclado.
+
+</p>
+<p>PyFreak is a python script (pygame) that reads image sequences in a non linear, semi -random fashion. The program takes a sequence of enumerated images in a directory, reorders them and renders them in a non linear way, using random functions controlled by a joystick or a keyboard.
+
+</p>
+<p>El Polarizador: project.jade
+title: Conflicto Local
+year: 2011
+
+</p>
+
+              <div id="project-links" class="span6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="span6 offset1"><a href="/"><< regresar | back</a></div>
+    </footer>
+    <script src="/static/lib/jquery-1.8.2.min.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/lib/jquery.lightbox-0.5.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#project-images a').lightBox({
+          imageLoading: '/static/img/loading.gif',
+          imageBtnClose: '/static/img/close.gif',
+          imageBtnPrev: '/static/img/prev.gif',
+          imageBtnNext: '/static/img/next.gif',
+          imageBlank: '/static/img/blank.gif'
+        });
+      });
+      
+    </script><!-- Piwik -->
+     <script type="text/javascript">
+       var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.randomlab.net/" : "http://stats.randomlab.net/");
+       document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js'type='text/javascript'%3E%3C/script%3E"));
+       </script>
+       <script type="text/javascript">
+         try {
+           var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 7);
+           piwikTracker.trackPageView();
+           piwikTracker.enableLinkTracking();
+         } catch( err ) {}
+       </script>
+       <noscript><p>
+       <img src="http://stats.randomlab.net/piwik.php?idsite=7" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Tag -->
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>martinez-zea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="mz website">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/styles/master.css">
+    <link rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css">
+  </head>
+  <body>
+    <div id="header" class="navbar">
+      <div class="navbar-inner">
+        <div class="container"><a href="/" class="brand"> 
+            <h1>martinez-zea</h1></a></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="content" class="span12">
+          <div class="row">
+            <div id="back" class="span6"><a href="/projects/dataplotter/"><< anterior | previous : Data Plotter</a><br><a href="/projects/cornucopia/">siguiente | next : cornucopia >></a>
+            </div>
+            <div id="project-title" class="span4 offset1">
+              <h2>pyhpgl
+              </h2><span>2009</span>
+            </div>
+          </div>
+          <div class="row">
+            <div id="project-media" class="span3">
+              <div id="project-images"><a href="http://farm4.staticflickr.com/3539/3639956008_6e311631a6_z.jpg"><img src="http://farm4.staticflickr.com/3539/3639956008_6e311631a6_z.jpg"></a><a href="http://farm3.staticflickr.com/2439/3639144233_7470134f1c_z.jpg"><img src="http://farm3.staticflickr.com/2439/3639144233_7470134f1c_z.jpg"></a><a href="http://farm4.staticflickr.com/3664/3639943822_0be4d731c5_z.jpg"><img src="http://farm4.staticflickr.com/3664/3639943822_0be4d731c5_z.jpg"></a>
+              </div>
+              <div id="project-video">
+                <iframe src="http://player.vimeo.com/video/5207234?badge=0&amp;color=ffffff" width="270" height="203" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              </div>
+            </div>
+            <div id="project-content" class="span6 offset1"><p>pyHPGL es una librería de python creada para enviar comandos HPGL/1 a plotters que soportan este lenguaje gráfico. La librería consiste en una serie de funciones envolventes (wrapper functions) que crean comandos con la sintaxis HPGL/1 y los escribe al puerto serial o a un archivo.
+Esta herramienta ha sido desarrollada para permitir interacción en tiempo real con el dispositivo, o la creacion de gráficos ploteados a partir de la escritura de código, en un estilo similar al de processing.
+
+</p>
+<hr>
+<p>pyHPGL is a Python library created to send HPGL/1 commands to plotters that supports this graphic language. The library consists in a series of wrapper functions that creates commands with the HPGL/1 syntax and writes them to the serial port or a file.
+This tool was developed to allow real time interaction with the device, or the creation of plotted graphics from writting code, in a similar way to Processing.
+</p>
+
+              <div id="project-links" class="span6"><a href="http://www.flickr.com/photos/nerd_bots/sets/72157622489125826/">im&aacute;genes | images </a><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="span6 offset1"><a href="/"><< regresar | back</a></div>
+    </footer>
+    <script src="/static/lib/jquery-1.8.2.min.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/lib/jquery.lightbox-0.5.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#project-images a').lightBox({
+          imageLoading: '/static/img/loading.gif',
+          imageBtnClose: '/static/img/close.gif',
+          imageBtnPrev: '/static/img/prev.gif',
+          imageBtnNext: '/static/img/next.gif',
+          imageBlank: '/static/img/blank.gif'
+        });
+      });
+      
+    </script><!-- Piwik -->
+     <script type="text/javascript">
+       var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.randomlab.net/" : "http://stats.randomlab.net/");
+       document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js'type='text/javascript'%3E%3C/script%3E"));
+       </script>
+       <script type="text/javascript">
+         try {
+           var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 7);
+           piwikTracker.trackPageView();
+           piwikTracker.enableLinkTracking();
+         } catch( err ) {}
+       </script>
+       <noscript><p>
+       <img src="http://stats.randomlab.net/piwik.php?idsite=7" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Tag -->
+  </body>
+</html>
