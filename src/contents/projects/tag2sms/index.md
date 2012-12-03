@@ -3,7 +3,9 @@ template: project.jade
 
 Tag2sms es una caja de mensajes sms que permite a los usuarios acceder a mensajes enviando palabras clave a un teléfono corriendo la aplicación.
 
-El software fue desarrollado para ser usado en talleres donde personas o grupos pueden crear procesos de comunicacion asíncrona, iniciados en lugares especificos del espacio urbano.  El sistema corre en un teléfono Android, pero los usuarios pueden interactuar con el usando cualquier móvil.
+El software fue desarrollado para ser usado en talleres donde personas o grupos pueden crear procesos de comunicación asíncrona, iniciados en lugares específicos del espacio urbano.  El sistema corre en un teléfono Android, pero los usuarios pueden interactuar con el usando cualquier móvil.
+
+------
 
 Tag2sms is a sms inbox that allows users to access messages by sending keywords to a smartphone running the application.
 
