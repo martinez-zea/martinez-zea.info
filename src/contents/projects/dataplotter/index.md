@@ -1,6 +1,7 @@
 template: project.jade
 title: Data Plotter
 year: 2010
+video: 14659093
 
 
 Data Plotter es un dispositivo que crea dibujos usando como entrada los datos capturados por el BereBere. Su principio es similar al de un sismógrafo. Su comportamiento esta determinado por la variación de los datos capturados durante las derivas. Esta maquina fue construida para realizar una acción que deja una huella sobre un papel.
