@@ -24,11 +24,11 @@ it is possible to use metadata tags to include some aditional information on the
 
 to include external images as metadata:
 
-*  `img_X` *where X is an unique id for the image key*
+*  `img: [ url ]` 
 
 need more links? just add them as metadata:
 
-* `misc_X: [title](url)` *it is mandatory to use both 'title' and 'url' as parameters for the link*
+* `links: [{title: daWebSite, url: http://web.domain}]` 
 
 
 Built with
