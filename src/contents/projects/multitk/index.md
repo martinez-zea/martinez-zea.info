@@ -1,6 +1,8 @@
+---
 template: project.jade
 title: Multi TK
 year: 2008
+---
 
 La multiT-K es una rockola para consulta y emisión de los contenidos generados en las acciones que se llevaron a cabo durante el XII Salón Regional de artistas zona centro. La estación permite realizar búsquedas de contenidos por diferentes criterios, realizar listas de reproducción y transmisión vía Internet, red inalámbrica local y F.M. de corto alcance.
 

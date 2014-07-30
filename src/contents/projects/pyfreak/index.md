@@ -1,6 +1,8 @@
+---
 template: project.jade
 title: PyFreak
 year: 2007
+---
 
 PyFreak es un script de python (pygame) que lee secuencias de imágenes de forma no secuencial y semi - aleatoria.  El programa toma imágenes numeradas consecutivamente en un directorio, las reordena y las muestra de manera no lineal, usando funciones aleatorias controladas con un joystick o un teclado.
 

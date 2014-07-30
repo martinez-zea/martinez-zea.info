@@ -1,11 +1,12 @@
+---
 template: project.jade
 title: Tweet2speech
 subtitle: Aplicación para teléfonos móviles | Mobile phones application
 year: 2012
 code: http://code.randomlab.net/hg/hgwebdir.cgi/t2s/summary
 wiki: http://martinez-zea.info/wiki/index.php/Tweet2Speech/Tech
-img_0: http://farm9.staticflickr.com/8344/8210687439_763435b1ee_z.jpg
-
+img: [http://farm9.staticflickr.com/8344/8210687439_763435b1ee_z.jpg]
+---
 
 **Tweet2speech** es una sencilla herramienta de participación remota en manifestaciones y eventos en el espacio público, que  le otorga voz a quienes no estén presentes físicamente en un lugar.  La aplicación usa el motor de texto a voz del sistema operativo Android para leer *tweets* que contienen un *hashtag* determinado, definido previamente por el usuario en la aplicación.
 

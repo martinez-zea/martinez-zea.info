@@ -1,12 +1,13 @@
+---
 template: project.jade
 title: Conflicto Local
 subtitle: Juego de video modificado | Modified video game
 year: 2011
-img_0:http://martinez-zea.info/wiki/uploads/LocalConflict/detail.png
-code: https://github.com/martinez-zea/localconflict
-images: https://secure.flickr.com/photos/nerd_bots/sets/72157626574227897/
-misc_0: [Entornos Ficcionados para realidades complejas](https://diferencialhubmedial.wordpress.com/2012/04/30/falta-poco-para-su-reapertura/)
-
+img: ['http://martinez-zea.info/wiki/uploads/LocalConflict/detail.png']
+code: 'https://github.com/martinez-zea/localconflict'
+images: 'https://secure.flickr.com/photos/nerd_bots/sets/72157626574227897/'
+links: {title: Entornos Ficcionados para realidades complejas, url: https://diferencialhubmedial.wordpress.com/2012/04/30/falta-poco-para-su-reapertura/}
+---
 
 <http://conflictolocal.co.cc>
 

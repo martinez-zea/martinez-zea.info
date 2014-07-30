@@ -1,3 +1,4 @@
+---
 template: project.jade
 title: spam
 subtitle: sistema publico de marcacion
@@ -6,11 +7,15 @@ video: 18564222
 code: http://code.randomlab.net/hg/hgwebdir.cgi/spam/
 images: http://www.flickr.com/photos/nerd_bots/sets/72157625284915560/
 wiki: http://martinez-zea.info/wiki/index.php/Spam/Spam
-img_1: http://farm5.staticflickr.com/4133/5172423500_cf283fb819_z.jpg
-img_2: http://farm5.staticflickr.com/4133/5172423500_cf283fb819_z.jpg
-misc_1: [Interactivos? BH 2010](http://interactivos.marginalialab.com/en/)
-misc_2: [Marginalia lab](http://marginalialab.com/)
-
+img: [
+    http://farm5.staticflickr.com/4133/5172423500_cf283fb819_z.jpg,
+    http://farm5.staticflickr.com/4133/5172423500_cf283fb819_z.jpg
+]
+links: [
+    {title: Interactivos? BH 2010, url: http://interactivos.marginalialab.com/en/},
+    {title: Marginalia lab, url: http://marginalialab.com/}
+]
+---
 
 SPAM [Sistema Publico de Auto Marcación] es un sistema público de difusión de mensajes, basado en las estrategias de publicidad no deseada (spam) usando la red de teléfonos fijos. La plataforma permite grabar un mensaje a cualquier persona con acceso a una línea telefónica, que será difundido a traves de otra linea por un sistema de auto marcado.
 

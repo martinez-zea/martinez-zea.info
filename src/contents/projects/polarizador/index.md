@@ -1,6 +1,9 @@
+---
 template: project.jade
 title: Polarizador
 year: 2008
+---
+
 
 Polarizador es una máquina que hace preguntas, almacena las respuestas y devuelve un recordatorio impreso de la interacción.  Captura información y la compara para crear opiniones opuestas acerca de cualquier tema.
 

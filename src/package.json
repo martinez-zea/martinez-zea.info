@@ -1,0 +1,23 @@
+{
+  "name": "martinez-zea-website",
+  "version": "0.0.0",
+  "description": "",
+  "main": "config.json",
+  "dependencies": {
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martinez-zea/martinez-zea.info.git"
+  },
+  "author": "Gabriel Zea <zea@gbrl.in> (http://gbrl.in/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinez-zea/martinez-zea.info/issues"
+  },
+  "homepage": "https://github.com/martinez-zea/martinez-zea.info"
+}

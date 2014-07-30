@@ -4,6 +4,6 @@
     "title": "martinez-zea",
     "description" : "mz website"
   },
-
+  "require":{"_": "underscore"},
   "plugins":["wintersmith-less"]
 }

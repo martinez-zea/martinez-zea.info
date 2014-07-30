@@ -3,5 +3,7 @@ projects/*
 static/*
 styles/*
 
+src/node_modules
+
 var/*
 *.swp

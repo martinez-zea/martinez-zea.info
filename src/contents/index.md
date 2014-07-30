@@ -1,5 +1,7 @@
+---
 template: index.jade
-
+title: index
+---
 
 martinez-zea es un colectivo integrado por Camilo Martinez (Bogotá, Colombia 1978 ) y Gabriel Zea (Bogota,
 Colombia 1981). Desde el 2006 trabajan con tecnologías libres en proyectos que involucran colaboración con personas

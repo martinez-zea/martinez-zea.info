@@ -5,7 +5,7 @@ block head_extra
 
 block script_extra
   script(src='/static/lib/jquery.lightbox-0.5.min.js')
-  script
+  script(type='text/javascript').
     $(document).ready(function(){
       $('#project-images a').lightBox({
         imageLoading: '/static/img/loading.gif',
@@ -19,7 +19,7 @@ block script_extra
 block content
   div.row
     div#back.span6
-      - var prjs = _.chain(contents.projects._.directories).map(function(item){
+      - var prjs = _.chain(contents.projects).map(function(item){
       -    return item.index
       -  }).compact().sortBy(function(item){
       -    return -item.metadata.year
@@ -31,13 +31,13 @@ block content
       -   }
       -  }
       if current.id > 0
-        title = prjs[current.id-1].title
-        url = prjs[current.id-1].url
+        - title = prjs[current.id-1].title
+        - url = prjs[current.id-1].url
         a(href='#{url}') << anterior | previous : #{title}
         br
       if current.id < prjs.length-1
-        title = prjs[current.id+1].title
-        url = prjs[current.id+1].url
+        - title = prjs[current.id+1].title
+        - url = prjs[current.id+1].url
         a(href='#{url}') siguiente | next : #{title} >>
     
     div#project-title.span4.offset1
@@ -53,14 +53,10 @@ block content
   div.row
     div#project-media.span3
       div#project-images
-        - var img_set = _.chain(page.metadata).map(function(value, key){
-        -   if (key.substring(0,4) == 'img_'){
-        -     return value
-        -    }
-        -  }).compact().value()
-        each im in img_set
-            a(href=im)
-              img(src=im)
+        if page.metadata.img
+          each im in page.metadata.img
+              a(href=im)
+                img(src=im)
 
         //- this implementation of read images from folder is REALLY BUGGY
         //- if need it for any reason should be fixed
@@ -99,20 +95,10 @@ block content
           a(href=page.metadata.images) im&aacute;genes | images 
           br
 
-        - var misc_set = _.chain(page.metadata).map(function(value, key){
-        -   if (key.substring(0,5) == 'misc_'){
-        -     return value
-        -    }
-        -  }).compact().value()
-        - var misc_parsed = []
-        - _.each(misc_set, function(item){
-        -     var tmp = item.match(/\[([^)]+)\]\(([^)]+)\)/ )
-        -     var json = {title:tmp[1],url:tmp[2]}
-        -     misc_parsed.push(json) 
-        -  })
-        each custom_link in misc_parsed
-          a(href=custom_link.url) #{custom_link.title}
-          br 
+        if page.metadata.links
+          each custom_link in page.metadata.links
+            a(href=custom_link.url) #{custom_link.title}
+            br 
 
 block footer
   a(href='/') << regresar | back

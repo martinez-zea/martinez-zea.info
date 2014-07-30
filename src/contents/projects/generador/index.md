@@ -1,18 +1,23 @@
+---
 template: project.jade
 title: Generador de Valores
 subtitle: Instalación interactiva | interactive installation
 year: 2012
-img_0: https://farm9.staticflickr.com/8010/7253779782_30d2103c71_z.jpg
-img_1: https://farm9.staticflickr.com/8024/7253760522_7021474246_z.jpg
-img_2: https://farm8.staticflickr.com/7214/7253750268_bc468ea307_z.jpg
-img_3: https://farm9.staticflickr.com/8158/7253761888_61efeb88d6_z.jpg
-img_4: https://farm8.staticflickr.com/7223/7253774150_a2c0e2c9c0_z.jpg
-img_5: https://farm8.staticflickr.com/7223/7253788768_90c5070aea_z.jpg
+img: [
+    https://farm9.staticflickr.com/8010/7253779782_30d2103c71_z.jpg,
+    https://farm9.staticflickr.com/8024/7253760522_7021474246_z.jpg,
+    https://farm8.staticflickr.com/7214/7253750268_bc468ea307_z.jpg,
+    https://farm9.staticflickr.com/8158/7253761888_61efeb88d6_z.jpg,
+    https://farm8.staticflickr.com/7223/7253774150_a2c0e2c9c0_z.jpg,
+    https://farm8.staticflickr.com/7223/7253788768_90c5070aea_z.jpg
+]
 code: https://github.com/martinez-zea/generador_valores
 images: https://secure.flickr.com/photos/nerd_bots/sets/72157629857536424/with/7253788768/
-misc_0: [Bienal de la Habana](http://www.bienalhabana.cult.cu/?secc=artistas_amp&idArtista=118)
-misc_1: [ArtForum](http://www.artforum.com/inprint/issue=201209&id=36142)
-
+links: [
+    {title: Bienal de la Habana, url: http://www.bienalhabana.cult.cu/?secc=artistas_amp&idArtista=118},
+    {title: ArtForum, url: http://www.artforum.com/inprint/issue=201209&id=36142}
+]
+---
 
 **Generador de Valores** es una máquina que crea valor a partir de la interacción de sus usuarios.
 
